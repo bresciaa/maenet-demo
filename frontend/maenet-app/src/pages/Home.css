@@ -1,0 +1,46 @@
+/* .scroll-snap {
+  overflow-y: scroll;                
+  scroll-snap-type: y mandatory;    
+  height: 100vh;                    
+  scroll-behavior: smooth; 
+} */
+
+#home {
+  height: 100vh;
+  margin: 0% 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  scroll-snap-align: start;
+}
+
+#title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.subtitle {
+    text-align: center;
+    line-height: 140%;
+}
+
+.demo-button {
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 500ms;
+}
+
+.demo-button:hover {
+  box-shadow: 0px 5px 30px rgba(92, 214, 215, 0.3);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,44 @@
+.overlay-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: fle;
+  gap: 1em;
+}
+
+.close-button {
+    font-size: 1em;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 200ms;
+}
+
+.close-button:hover {
+    background-color: rgba(255, 83, 83, 0.5);
+}
+
+canvas {
+    width: 512px;
+    height: auto;
+}

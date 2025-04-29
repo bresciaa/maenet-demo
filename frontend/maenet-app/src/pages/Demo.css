@@ -1,0 +1,81 @@
+#demo {
+    height: 100vh;
+    margin: 0% 10%;
+    padding: 10% 0%;
+    padding-top: 4em;
+
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.prediction-results {
+    width: 100%; /* Take up the full width of the parent */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the images */
+    gap: 10px; /* Add a gap between the images */
+    padding-bottom: 50px;
+}
+
+.prediction-images {
+    width: 100%; /* Take up the full width of the parent */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the images */
+    gap: 10px; /* Add a gap between the images */
+}
+
+.image-container {
+    width: 100%; /* Take up the full width of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.image-container img {
+    display: block;
+    /* max-width: 256px; */
+    width: 100%; /* Take up the full width of the parent */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain; /* Make the image fit its container */
+}
+
+.prediction-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.prediction-buttons button {
+    font-size: 1em;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 200ms;
+}
+
+.prediction-buttons button:hover {
+    background-color: rgba(129, 204, 51, 0.5);
+}
+
+@media (max-width: 950px) {
+    .prediction-results {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .prediction-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

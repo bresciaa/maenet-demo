@@ -1,0 +1,18 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 10%;
+    padding-bottom: 1em;
+
+    align-content: center;
+    background-color: white;
+}
+
+.title {
+    padding: 5px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+}
