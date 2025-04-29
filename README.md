@@ -1,2 +1,2 @@
-# maenet-demo
-Ma-E-Net Demo
+# MA-E-Net
+MA-E-Net Demo
